@@ -1,0 +1,5 @@
+1)SELECT COUNT(*) FROM Salesperson WHERE Sname LIKE 'a%' OR Sname LIKE 'A%';
+2)SELECT COUNT(*) FROM Salesperson WHERE City = 'Newyork';
+3)SELECT City, COUNT(*) FROM Salesperson WHERE City IN ('London', 'Paris') GROUP BY City;
+4)SELECT Sname, Odate, COUNT(*) FROM Salesperson JOIN Orders ON Salesperson.Snum = Orders.Snum GROUP BY Sname, Odate;
+5)SELECT Sname, Odate, COUNT(*) FROM Salesperson JOIN Orders ON Salesperson.Snum = Orders.Snum GROUP BY Sname, Odate;
